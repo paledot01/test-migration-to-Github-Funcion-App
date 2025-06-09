@@ -6,8 +6,8 @@ app.http('httpTrigger1', {
     handler: async (request, context) => {
         context.log(`Http function processed request for url "${request.url}"`);
 
-        const name = request.query.get('name') || await request.text() || 'world';
+        const name = request.query.get('name') || await request.text() || 'BASILIO';
 
-        return { body: `Hello ggg, ${name}!, ${process.env["VARIABLE"]}` };
+        return { body: `Hello, ${name}!, ${process.env["VARIABLE"]}` };
     }
 });
