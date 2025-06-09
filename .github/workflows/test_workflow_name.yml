@@ -66,4 +66,4 @@ jobs:
           app-name: 'test-hal-migration-basilio'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_72CE7B6335C64656A34990C90156B02B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_TEST }}
